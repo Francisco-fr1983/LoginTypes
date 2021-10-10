@@ -2,7 +2,7 @@
  LoginTypes  
  Olá este projeto foi desenvolvido em Kotlin, para treino em modos de acesso para um aplicativo.
  
-Vídeo do aplicativo LoginTypes. https://youtu.be/Vcbyl0-Hb4c
+Vídeo do aplicativo LoginTypes![LoginTypes](https://www.youtube.com/watch?v=Vcbyl0-Hb4c)
 
 Veja a tela do aplicativo.
 ![LoginTypes](https://user-images.githubusercontent.com/79156176/136702693-a5407127-eeb6-40f1-bc06-04aa6cf40c30.jpg)
