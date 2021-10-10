@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#613531"
+    android:orientation="horizontal"
+    tools:context=".UI.MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_mail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="55dp"
+        android:clickable="true"
+        android:src="@drawable/mail_24"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gmail"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:maxImageSize="55dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_gmail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/gmail_13"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_mail"
+        app:layout_constraintStart_toEndOf="@+id/fab_mail"
+        app:layout_constraintTop_toTopOf="@+id/fab_mail"
+        app:maxImageSize="60dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_microsoft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/ic_windows"
+        app:layout_constraintBottom_toBottomOf="@id/btn_gmail"
+        app:layout_constraintStart_toEndOf="@id/btn_gmail"
+        app:layout_constraintTop_toTopOf="@+id/btn_gmail"
+        app:maxImageSize="60dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_FacebookLogin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/facebook_24"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_microsoft"
+        app:layout_constraintStart_toEndOf="@+id/fab_microsoft"
+        app:layout_constraintTop_toTopOf="@+id/fab_microsoft"
+        app:maxImageSize="60dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/anonimo_24"
+        app:layout_constraintBottom_toBottomOf="@+id/button_FacebookLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_FacebookLogin"
+        app:layout_constraintTop_toTopOf="@+id/button_FacebookLogin"
+        app:maxImageSize="60dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="REGISTER"
+        app:backgroundTint="@color/com_facebook_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="16dp"
+        tools:background="@drawable/button"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#11DA03"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintBottom_toTopOf="@+id/text_senha"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="122dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:hint="EMAIL"
+            android:drawableRight="@drawable/ic_email"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/button3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_senha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#11DA03"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:hint="SENHA"
+            android:inputType="textPassword"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="LOGIN"
+        app:layout_constraintTop_toBottomOf="@id/text_senha"  />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+<!--Foi envelopado todo o layout utilizando o NestedScrollView-->

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginTypes</string>
+    <string name="facebook_app_id">384704363185375</string>
+    <string name="fb_login_protocol_scheme">fb384704363185375</string>
+    <string name="ola_mundo">Ola mundo!</string>
+
+</resources>
