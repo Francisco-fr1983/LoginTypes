@@ -4,6 +4,8 @@
  
 Video do aplicativo LoginTypes.### ! [Video do aplicativo LoginTypes.](https://www.youtube.com/watch?v=Vcbyl0-Hb4c)
 
+
+
 Veja a tela do aplicativo.
 ![LoginTypes](https://user-images.githubusercontent.com/79156176/136702693-a5407127-eeb6-40f1-bc06-04aa6cf40c30.jpg)
 Conhecimentos abordados.
